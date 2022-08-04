@@ -7,9 +7,6 @@ from kivy.uix.boxlayout import BoxLayout
 
 ### Déclaration des widget
 
-class MainWidget(BoxLayout): 
-     
-
 
 
 class MainApp(MDApp):
@@ -17,10 +14,11 @@ class MainApp(MDApp):
     def build(self):
         return MainWidget()
 
-    def onstart():
-        pass 
+    #def onstart():
+    #    pass 
 
- 
-
-if '__name__' =='_ _main__':
-    MainApp().run
+class MainWidget(BoxLayout): 
+    pass
+     
+if '__name__' == '__main.py__':
+    MainApp.run()
